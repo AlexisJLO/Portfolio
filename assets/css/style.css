@@ -1,5 +1,6 @@
 * {
     --Main-Font:'Montserrat', sans-serif;
+    --secondary-color: rgb(228, 29, 228);
    
 }
 
@@ -30,7 +31,7 @@ header li {
 header img {
     cursor: pointer;
     max-width: 50px;
-    filter: grayscale(100%);
+    filter: grayscale(100%);   
 }
 
 main {
@@ -42,24 +43,21 @@ main {
 .mainContainer {
     display: flex;
     justify-content: center;
-    width: 1200px;
+    align-items: center;
+    width: 100%;
     height: 600px;
     flex-direction: column;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 10px;
-    
-}
-.mainContainer h1 {
-    margin-bottom: 20px;
-    font-size: 48px;
-    font-weight: 900;
+    position: relative;
+    left: -100%; 
+    animation: slideIn 0.8s ease-in-out forwards, fadeIn 1.5s ease-in-out forwards; 
+    opacity: 0; 
+    font-size: 22px;
 }
 
+
+
 span{
-    color: rgb(228, 29, 228);
+    color: var(--secondary-color)
 }
 
 .mainContainer nav {
@@ -78,5 +76,21 @@ span{
     padding: 10px;
     border-right: 2px solid black;
      cursor: pointer;
+     color: var(--secondary-color);
 }
+
+
+@keyframes slideIn {
+    to {
+        left: -20%; 
+    }
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; 
+    }
+}
+
+
 
