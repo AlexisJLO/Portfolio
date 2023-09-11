@@ -1,0 +1,22 @@
+
+
+
+header {
+    display: flex;
+    justify-content: right;
+}
+
+header li {
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin-right: 50px;
+}
+
+header img {
+    cursor: pointer;
+    max-width: 50px;
+    filter: grayscale(100%);
+}
