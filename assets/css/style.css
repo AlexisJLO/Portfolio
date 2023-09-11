@@ -33,9 +33,13 @@ header li {
 header img {
     cursor: pointer;
     max-width: 50px;
-    filter: grayscale(100%);
+    filter: grayscale(100%) sepia(100%) hue-rotate(300deg);
 }
-
+.insta img{
+    padding-top: 5px;
+    max-width: 40px;
+    height: auto;
+}
 main {
     font-family: var(--Main-Font);
     max-width: 100%;
@@ -133,10 +137,48 @@ span {
 
 .skills ul h3 {
     text-align: center;
+    color: beige;
     margin-top: 10px;
 }
 
 .skills img {
     max-width: 100px;
     height: auto;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    background-color: rgba(0, 0, 0, 0.842);
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer h1 {
+    color: beige;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+footer li {
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-right: 50px;
+}
+
+footer img {
+    cursor: pointer;
+    max-width: 50px;
+    filter: brightness(0) invert(1) grayscale(4) contrast(9);
 }
