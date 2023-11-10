@@ -149,12 +149,13 @@ span {
 }
 
 .projects {
-    display: flex;
+    background: white;
+    display: block;
     flex-direction: column;
     align-items: center;
     width: 100%; 
     margin-top: 100px;
-    height: 1200px;
+    height: 1800px;
 
 }
 
